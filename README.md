@@ -29,5 +29,5 @@ The devcontainer uses the [`desktop-lite`](https://github.com/devcontainers/feat
 ## Tips
 
 - The VNC server may take a few seconds to start — if you get a blank page, refresh after a moment.
-- `turtle.done()` keeps the window open. Close it or Ctrl+C in the terminal to exit.
+- Scripts use `turtle.exitonclick()` — click anywhere on the turtle window in the VNC desktop to close it and return control to the terminal.
 - Write your own scripts in the root or `examples/` directory and run them the same way.

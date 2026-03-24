@@ -16,4 +16,4 @@ for i in range(360):
     t.forward(i * 0.5)
     t.left(59)
 
-turtle.done()
+turtle.exitonclick()

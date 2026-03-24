@@ -29,4 +29,4 @@ t.pendown()
 
 draw_tree(t, 100, 25, 0.75)
 
-turtle.done()
+turtle.exitonclick()
