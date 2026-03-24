@@ -1,0 +1,23 @@
+{
+  "name": "Python Turtle with VNC",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "vscode",
+      "webPort": 6080,
+      "vncPort": 5901
+    }
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "VNC Desktop",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "remoteEnv": {
+    "DISPLAY": ":1"
+  },
+  "runArgs": ["--shm-size=1g"],
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk"
+}
