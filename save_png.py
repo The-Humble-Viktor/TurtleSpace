@@ -5,6 +5,10 @@ from PIL import Image
 
 def save(screen, filename):
     """Save the turtle screen to a PNG file in the output/ directory."""
+    import turtle
+    for t in screen.turtles():
+        t.hideturtle()
+    screen.update()
     os.makedirs("output", exist_ok=True)
     eps_path = f"output/{filename}.eps"
     png_path = f"output/{filename}.png"
