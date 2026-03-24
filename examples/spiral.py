@@ -1,5 +1,7 @@
 """Colorful spiral drawn with Python turtle."""
 import turtle
+import sys; sys.path.insert(0, ".")
+import save_png
 
 screen = turtle.Screen()
 screen.bgcolor("black")
@@ -16,4 +18,5 @@ for i in range(360):
     t.forward(i * 0.5)
     t.left(59)
 
+save_png.save(screen, "spiral")
 turtle.exitonclick()

@@ -1,5 +1,7 @@
 """Recursive fractal tree drawn with Python turtle."""
 import turtle
+import sys; sys.path.insert(0, ".")
+import save_png
 
 
 def draw_tree(t, branch_len, angle, shrink):
@@ -29,4 +31,5 @@ t.pendown()
 
 draw_tree(t, 100, 25, 0.75)
 
+save_png.save(screen, "tree")
 turtle.exitonclick()
