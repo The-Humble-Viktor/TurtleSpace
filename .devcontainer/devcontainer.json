@@ -1,6 +1,6 @@
 {
   "name": "Python Turtle with VNC",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "vscode",
